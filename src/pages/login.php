@@ -18,13 +18,17 @@
       </div>
     </div>
     <div class="login-form-div">
-      <form action="#" class="login-form">
+      <form action="../modules/php_modules/login.php" class="login-form" method="POST">
         <h2 class="create-acc-h2">Login Account</h2>
         <button class="google-sign-btn">Login with Google</button>
         <p>- OR -</p>
         <input type="text" id="email" class="input-email" name="email" autofocus="false" placeholder="Email Address" required>
-        <input type="password" id="passowrd" class="input-passwor" name="passowrd" autofocus="false" placeholder="Password" required> 
-        <input type="submit" value="Login Account" class="create-acc-btn" autofocus="false">
+        <input type="password" id="passowrd" class="input-passwor" name="password" autofocus="false" placeholder="Password" required> 
+        <input type="submit" value="Login Account" class="create-acc-btn" autofocus="false" name="submit">
+        <div class="check-admin-div" style="display: flex; gap: 0.5rem;">
+          <label for="check-admin">Admin</label>
+          <input type="checkbox" name="check-admin">
+        </div>
       </form>
       <a href="./signup.html" class="create-acc-ref">create Account</a>
     </div>
