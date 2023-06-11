@@ -1,6 +1,6 @@
 class Popups {
   createLead = `
-  <form action="#" method="post" class="form-container">
+  <form action="../modules/php_modules/create_lead.php" method="post" class="form-container">
     <h2>Create New Lead</h2>
     
     <label for="full-name"><b>Full Name</b></label>
@@ -9,17 +9,16 @@ class Popups {
       <input type="text" placeholder="Last Name" name="last-name" required>
     </div>
     <label for="Company"><b>Company</b></label>
-    <input type="text" placeholder="Company Name" name="Company" required>
+    <input type="text" placeholder="Company Name" name="company" required>
     <label for="job-title"><b>Job Title</b></label>
     <input type="text" placeholder="Job title" name="job-title" required>
     <label for="phone"><b>Phone Number</b></label>
     <input type="text" placeholder="Enter Phone Number" name="phone" required>
-    00
     <label for="emal"><b>Email</b></label>
     <input type="email" placeholder="Enter Email" name="email" required>
     <label for="email"><b>Comment</b></label>
     <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
-    <button type="submit" class="btn">Create New</button>
+    <button type="submit" class="btn" name="submit">Create New</button>
     <button type="button" class="btn cancel cancel-new-lead-popup">Close</button>
   </form>
   `;

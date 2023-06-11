@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2023 at 05:20 PM
+-- Generation Time: Jun 11, 2023 at 06:41 PM
 -- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -25,6 +25,9 @@ DELIMITER $$
 --
 -- Procedures
 --
+CREATE DEFINER=`` PROCEDURE `create_lead` (IN `fname` VARCHAR(250), IN `lname` VARCHAR(250), IN `company` VARCHAR(250), IN `job_title` VARCHAR(250), IN `phone` VARCHAR(250), IN `email` VARCHAR(250), IN `comments` TEXT)   INSERT INTO `lead` (`id`, `first_name`, `last_name`, `company`, `job_title`, `comment`, `phone_number`, `email`)
+VALUES (NULL,fname ,lname ,company ,job_title ,comments ,phone ,email)$$
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `login_admin` (IN `email` VARCHAR(255), IN `passwd` VARBINARY(255))   SELECT * FROM admin 
 where admin.email = email 
 and admin.passwd = passwd$$
@@ -51,7 +54,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `email`, `passwd`) VALUES
-(1, 'adminyisak@gmail.com', 0x7061353577307264);
+(1, 'adminyisak@gmail.com', 0x7465737470617373);
 
 -- --------------------------------------------------------
 
@@ -69,6 +72,13 @@ CREATE TABLE `lead` (
   `phone_number` varchar(100) NOT NULL,
   `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `lead`
+--
+
+INSERT INTO `lead` (`id`, `first_name`, `last_name`, `company`, `job_title`, `comment`, `phone_number`, `email`) VALUES
+(2, 'Israel', 'Dereje', 'Google', 'Front-end Dev', 'Some comment here', '+251932900261', 'Israel@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -127,7 +137,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `lead`
 --
 ALTER TABLE `lead`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `login_agent`
