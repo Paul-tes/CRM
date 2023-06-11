@@ -15,7 +15,7 @@
   <header id="top-header">
     <nav class="nav-item-w">
       <ul class="top-header-links-ul">
-        <li><a href="../index.html" class="header-link-item-a">Dashboard</a></li>
+        <li><a href="../index.php" class="header-link-item-a">Dashboard</a></li>
         <li><a href="#" class="header-link-item-a">Sales</a></li>
         <li><a href="#" class="header-link-item-a">Marketing</a></li>
         <li><a href="#" class="header-link-item-a">Support</a></li>
@@ -34,8 +34,8 @@
     </aside>
     <div class="continer-main">
       <div class="container-main-header">
-        <a href="../index.html" class="path-dashboard">Dashboard > </a>
-        <a href="../index.html" class="path-dashboard">Activities > </a>
+        <a href="../index.php" class="path-dashboard">Dashboard > </a>
+        <a href="../index.php" class="path-dashboard">Activities > </a>
       </div>
       <div class="date-div">
         <p>Tusday 3/21/2023<p>

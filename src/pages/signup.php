@@ -29,7 +29,7 @@
         <input type="password" id="confirm-passowrd" class="input-passwor" name="confirm-passowrd" autofocus="false" placeholder="confirm passowrd" required>
         <input type="submit" value="creaate Account" class="create-acc-btn" autofocus="false">
       </form>
-      <a href="../pages/login.html" class="have-acc-ref">Already have account</a>
+      <a href="../pages/login.php" class="have-acc-ref">Already have account</a>
     </div>
   </div>
 </body>

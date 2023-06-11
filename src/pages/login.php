@@ -30,7 +30,7 @@
           <input type="checkbox" name="check-admin">
         </div>
       </form>
-      <a href="./signup.html" class="create-acc-ref">create Account</a>
+      <a href="./signup.php" class="create-acc-ref">create Account</a>
     </div>
   </div>
 </body>

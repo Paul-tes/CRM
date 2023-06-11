@@ -15,11 +15,11 @@
   <header id="top-header">
     <nav class="nav-item-w">
       <ul class="top-header-links-ul">
-        <li><a href="../index.html" class="header-link-item-a">Dashboard</a></li>
-        <li><a href="./sales.html" class="header-link-item-a current-page-a">Sales</a></li>
+        <li><a href="../index.php" class="header-link-item-a">Dashboard</a></li>
+        <li><a href="./sales.php" class="header-link-item-a current-page-a">Sales</a></li>
         <li><a href="#" class="header-link-item-a">Marketing</a></li>
         <li><a href="#" class="header-link-item-a">Support</a></li>
-        <li><a href="./activities.html" class="header-link-item-a">Activities</a></li>
+        <li><a href="./activities.php" class="header-link-item-a">Activities</a></li>
       </ul>
     </nav>
     <nav class="header-nav-item-icon">
@@ -31,7 +31,7 @@
     <aside class="left-nav">
       <div class="icons">
         <a href="#"><i class="fa-solid fa-bars lef-nav-menue-bar-i"><span class="icon-des display-none">Menue</span></i></a>
-        <a href="../index.html"><i class="fa-solid fa-house lef-nav-menue-bar-i"><span class="icon-des display-none">Home</span></i></a>
+        <a href="../index.php"><i class="fa-solid fa-house lef-nav-menue-bar-i"><span class="icon-des display-none">Home</span></i></a>
         <a href="#"><i class="fa-solid fa-shuffle lef-nav-menue-bar-i"><span class="icon-des display-none">Lead</span></i></a>
         <a href="#"><i class="fa-solid fa-user lef-nav-menue-bar-i"><span class="icon-des display-none">Account</span></i></a>
         <a href="#"><i class="fa-solid fa-address-card lef-nav-menue-bar-i"><span class="icon-des display-none">Contact</span></i></a>
@@ -41,7 +41,7 @@
     <div class="continer-main">
       <div class="container-main-header">
         <a href="../index.js" class="path-dashboard">Dashboard ></a>
-        <a href="./sales.html" class="path-dashboard">Sales</a>
+        <a href="./sales.php" class="path-dashboard">Sales</a>
       </div>
       <div class="date-div">
         <p>Tusday 3/21/2023<p>

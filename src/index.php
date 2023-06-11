@@ -15,11 +15,11 @@
   <header id="top-header">
     <nav class="nav-item-w">
       <ul class="top-header-links-ul">
-        <li><a href="./index.html" class="header-link-item-a current-page-a">Dashboard</a></li>
-        <li><a href="./pages/sales.html" class="header-link-item-a">Sales</a></li>
+        <li><a href="./index.php" class="header-link-item-a current-page-a">Dashboard</a></li>
+        <li><a href="./pages/sales.php" class="header-link-item-a">Sales</a></li>
         <li><a href="#" class="header-link-item-a">Marketing</a></li>
         <li><a href="#" class="header-link-item-a">Support</a></li>
-        <li><a href="./pages/activities.html" class="header-link-item-a">Activities</a></li>
+        <li><a href="./pages/activities.php" class="header-link-item-a">Activities</a></li>
       </ul>
     </nav>
     <nav class="header-nav-item-icon">
