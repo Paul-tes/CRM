@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#top-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #3439ac;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0.2rem;
+}
+
+.top-header-links-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  margin-left: 6rem;
+  margin-top: 0.6rem;
+}
+
+.header-link-item-a {
+  color: white;
+  font-weight: 500;
+}
+
+.header-nav-item-icon {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-bell-icon {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.header-user-icon {
+  color: white;
+  font-size: 2.89rem;
+}
+
+.current-page-a {
+  border-bottom: 2px solid white;
+}
+
+.container {
+  display: flex;
+  margin-top: 2.9rem;
+}
+
+.container .left-nav {
+  width: 4rem;
+  background-color: aliceblue;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  top: 3.3rem;
+  transition: width 0.5s;
+}
+
+.left-nav .icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lef-nav-menue-bar-i {
+  font-size: 2rem;
+  color: #1e1e1e;
+}
+
+.left-nav-search-i {
+  font-size: 1.6rem;
+  color: #6e6d6d;
+}
+
+.continer-main {
+  height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 4rem;
+}
+
+.container-main-header {
+  background-color: aliceblue;
+  margin-top: -0.5rem;
+}
+
+.path-dashboard {
+  color: #3439ac;
+  font-size: 0.89rem;
+}
+
+.date-div {
+  font-size: 1rem;
+  font-weight: 300;
+  width: fit-content;
+  padding: 0.36rem;
+  float: right;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+section.cards-section {
+  clear: both; /* the last item left item is floated right */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  margin-left: 3rem;
+}
+
+.card {
+  width: 20rem;
+  height: 19.2rem;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+  padding: 1rem;
+}
+
+.todo-card .top p,
+.new-leads-card p,
+.recent-activities-card .p-h,
+.open-deals-card p,
+.top-industries-leads-card p,
+.top-lead-owners-card p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.todo-card .top h2,
+.new-leads-card h2 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.todo-card .fineshed-progress {
+  background-color: #c8c0df;
+  border-radius: 10px;
+  width: 80%;
+  height: fit-content;
+}
+
+.todo-card .finesh-task-progress-bar {
+  border-radius: 10px;
+  height: 24px;
+  width: 75%;
+  background-color: #602bf8;
+  margin-top: 1rem;
+  height: 1.2rem;
+}
+
+.todo-card .bottom {
+  border-top: 2px solid #1e1e1e;
+}
+
+.new-leads-card {
+  display: flex;
+}
+
+.percent,
+.No {
+  font-weight: 700;
+}
+
+.new-leads-card .cirular-bar {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #d2eaf1;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 3.2rem;
+  margin-left: 2rem;
+  color: #602bf8;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.recent-activities-card h2,
+.open-deals-card h2 {
+  font-size: 8rem;
+}
+
+.top-industries-leads-card .item-lists p,
+.top-lead-owners-card .item-lists p {
+  padding: 0.3rem;
+  margin-top: 0.3rem;
+  width: 100%;
+  background-color: azure;
+}
+
+.top-industries-leads-card .item-lists p span,
+.top-lead-owners-card .item-lists p span {
+  float: right;
+  margin-right: 1rem;
+}
+
+.top-industries-leads-card .item-lists p i,
+.top-lead-owners-card .item-lists p i {
+  float: right;
+  margin-right: 1rem;
+}
+
+.carret-up {
+  color: green;
+}
+
+.carret-down {
+  color: red;
+}
+
+.cust-lookup {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cust-lookup .locokup-input-items input {
+  margin: 1rem 2rem 1rem -1rem;
+  padding: 0.4rem;
+  width: 15rem;
+}
+
+.cust-lookup .locokup-input-items .cust-look-btn {
+  border: none;
+  background: none;
+  padding: 0.5rem;
+}
+
+.cust-lookup-result {
+  margin-top: 1rem;
+  margin-left: 3rem;
+  padding: 1rem;
+}
+
+.cust-lookup-result .result-lists {
+  padding: 1rem;
+}
+
+.cust-lookup-result .result-lists .result-item {
+  height: 2rem;
+  width: 80%;
+  margin-top: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.cust-lookup-result .result-lists .result-item p:nth-child(1) {
+  background-color: #4a4d9f;
+  color: white;
+  padding: 0.2rem;
+  font-weight: 300;
+}
+
+.cust-lookup-result .result-lists .result-item p:nth-child(n+2) {
+  background-color: #49b45d;
+  color: white;
+  padding: 0.2rem;
+  font-weight: 300;
+}
+
