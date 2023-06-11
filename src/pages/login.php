@@ -22,7 +22,6 @@
         <h2 class="create-acc-h2">Login Account</h2>
         <button class="google-sign-btn">Login with Google</button>
         <p>- OR -</p>
-        <input type="text" id="full-name" class="input-name" name="full-name" autofocus="false" placeholder="Full Name" required>
         <input type="text" id="email" class="input-email" name="email" autofocus="false" placeholder="Email Address" required>
         <input type="password" id="passowrd" class="input-passwor" name="passowrd" autofocus="false" placeholder="Password" required> 
         <input type="submit" value="Login Account" class="create-acc-btn" autofocus="false">
