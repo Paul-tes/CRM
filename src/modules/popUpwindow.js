@@ -63,9 +63,6 @@ class Popups {
       <input type="text" placeholder="Place your Address" name="address" required>
 
 
-      <label for="address"><b>Account Contact Role</b></label>
-      <input type="text" placeholder="Place your Role" name="address" required>
-
       <label for="status"><b>Status</b></label>
       <select id="status" name="status">
         <option value="active">Active</option>

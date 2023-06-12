@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/4e57741acf.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../styles/sales.css">
   <title>CRM</title>
 </head>
+
 <body>
   <header id="top-header">
     <nav class="nav-item-w">
@@ -30,12 +34,18 @@
   <div class="container">
     <aside class="left-nav">
       <div class="icons">
-        <a href="#"><i class="fa-solid fa-bars lef-nav-menue-bar-i"><span class="icon-des display-none">Menue</span></i></a>
-        <a href="../index.php"><i class="fa-solid fa-house lef-nav-menue-bar-i"><span class="icon-des display-none">Home</span></i></a>
-        <a href="#"><i class="fa-solid fa-shuffle lef-nav-menue-bar-i"><span class="icon-des display-none">Lead</span></i></a>
-        <a href="#"><i class="fa-solid fa-user lef-nav-menue-bar-i"><span class="icon-des display-none">Account</span></i></a>
-        <a href="#"><i class="fa-solid fa-address-card lef-nav-menue-bar-i"><span class="icon-des display-none">Contact</span></i></a>
-        <a href="#"><i class="fa-solid fa-star lef-nav-menue-bar-i"><span class="icon-des display-none">Opportunity</span></i></a>
+        <a href="#"><i class="fa-solid fa-bars lef-nav-menue-bar-i"><span
+              class="icon-des display-none">Menue</span></i></a>
+        <a href="../index.php"><i class="fa-solid fa-house lef-nav-menue-bar-i"><span
+              class="icon-des display-none">Home</span></i></a>
+        <a href="#"><i class="fa-solid fa-shuffle lef-nav-menue-bar-i"><span
+              class="icon-des display-none">Lead</span></i></a>
+        <a href="#"><i class="fa-solid fa-user lef-nav-menue-bar-i"><span
+              class="icon-des display-none">Account</span></i></a>
+        <a href="#"><i class="fa-solid fa-address-card lef-nav-menue-bar-i"><span
+              class="icon-des display-none">Contact</span></i></a>
+        <a href="#"><i class="fa-solid fa-star lef-nav-menue-bar-i"><span
+              class="icon-des display-none">Opportunity</span></i></a>
       </div>
     </aside>
     <div class="continer-main">
@@ -44,18 +54,27 @@
         <a href="./sales.php" class="path-dashboard">Sales</a>
       </div>
       <div class="date-div">
-        <p>Tusday 3/21/2023<p>
+        <p>Tusday 3/21/2023
+        <p>
       </div>
 
+      <?php
+      //lead section
+      require "../modules/php_modules/get_all_data.php";
+      require "../modules/php_modules/search_lead.php";
+
+      ?>
       <section class="lead-section display-none section-item">
         <div class="cust-lookup">
           <h2>Lead</h2>
           <div class="locokup-input-items">
-            <input type="text" name="name" id="name" placeholder="Name">
-            <button class="cust-look-btn"><i class="fa-solid fa-magnifying-glass left-nav-search-i"></i></button>
+            <form action="" method="post">
+              <input type="text" name="search" id="lead_search" placeholder="Name">
+              <button class="cust-look-btn"><i class="fa-solid fa-magnifying-glass left-nav-search-i"></i></button>
+            </form>
             <button class="btn btn-add-new btn-new-lead">Add New</button>
           </div>
-          
+
           <table class="customer-grid-table">
             <thead>
               <tr>
@@ -66,13 +85,29 @@
                 <th>Comment</th>
                 <th>Phone Number</th>
                 <th>Email</th>
-                <th>Comment</th>
+                <!-- <th>Comment</th> -->
                 <th></th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <?php
+              while ($row = mysqli_fetch_assoc($lead_result)) {
+                echo "<tr>";
+                echo "<td>" . $row['first_name'] . "</td>";
+                echo "<td>" . $row['last_name'] . "</td>";
+                echo "<td>" . $row['company'] . "</td>";
+                echo "<td>" . $row['job_title'] . "</td>";
+                echo "<td>" . $row['comment'] . "</td>";
+                echo "<td>" . $row['phone_number'] . "</td>";
+                echo "<td>" . $row['email'] . "</td>";
+                // echo "<td>" . $row['comment'] . "</td>";
+                echo "<td><button class='btn btn-update'>update</button></td>";
+                echo "<td><button class='btn btn-delete'>Delete</button></td>";
+                echo "</tr>";
+              }
+              ?>
+              <!-- <tr>
                 <td>John</td>
                 <td>Doe</td>
                 <td>Acme Inc.</td>
@@ -95,7 +130,7 @@
                 <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
                 <th><button class="btn btn-update">update</button></th>
                 <th><button class="btn btn-delete">Delete</button></th>
-              </tr>
+              </tr> -->
               <!-- Add more rows as needed -->
             </tbody>
           </table>
@@ -111,14 +146,13 @@
             <button class="cust-look-btn"><i class="fa-solid fa-magnifying-glass left-nav-search-i"></i></button>
             <button class="btn btn-add-new btn-add-new-acc">Add New</button>
           </div>
-          
+
           <table class="customer-grid-table">
             <thead>
               <tr>
                 <th> Agent First Name</th>
                 <th>Agent Last Name</th>
                 <th>Address</th>
-                <th>Account ContactRole</th>
                 <th>Status</th>
                 <th></th>
                 <th></th>
@@ -129,18 +163,16 @@
                 <td>John</td>
                 <td>Doe</td>
                 <td>Addis Ababa</td>
-                <td>saler</td>
                 <td>Opend</td>
                 <td><button class="btn btn-update">update</button></td>
                 <td><button class="btn btn-delete">Delete</button></td>
               </tr>
               <td>John</td>
-                <td>Doe</td>
-                <td>Addis Ababa</td>
-                <td>saler</td>
-                <td>Opend</td>
-                <td><button class="btn btn-update">update</button></td>
-                <td><button class="btn btn-delete">Delete</button></td>
+              <td>Doe</td>
+              <td>Addis Ababa</td>
+              <td>Opend</td>
+              <td><button class="btn btn-update">update</button></td>
+              <td><button class="btn btn-delete">Delete</button></td>
               </tr>
               <!-- Add more rows as needed -->
             </tbody>
@@ -158,7 +190,7 @@
             <button class="cust-look-btn"><i class="fa-solid fa-magnifying-glass left-nav-search-i"></i></button>
             <button class="btn btn-add-new btn-add-new-con">Add New</button>
           </div>
-          
+
           <table class="customer-grid-table">
             <thead>
               <tr>
@@ -212,7 +244,7 @@
             <button class="cust-look-btn"><i class="fa-solid fa-magnifying-glass left-nav-search-i"></i></button>
             <button class="btn btn-add-new  btn-add-new-opp">Add New</button>
           </div>
-          
+
           <table class="customer-grid-table">
             <thead>
               <tr>
@@ -288,4 +320,5 @@
   </div> -->
   <script src="./sales.js" type="module"></script>
 </body>
+
 </html>

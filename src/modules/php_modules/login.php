@@ -1,8 +1,10 @@
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 require("./connect.php");
 if (isset($_POST['submit'])) {
-    if(isset($_POST["check-admin"])){
+    if (isset($_POST["check-admin"])) {
         $email = test_input($_POST['email']);
         $password = test_input($_POST['password']);
         $query = "CALL login_admin('$email','$password');";
@@ -20,7 +22,7 @@ if (isset($_POST['submit'])) {
             //     header("Location: ../template/login.php?error=1");
             // }
         }
-    }else{
+    } else {
         $email = test_input($_POST['email']);
         $password = test_input($_POST['password']);
         $query = "CALL login_agent('$email','$password');";
@@ -40,7 +42,7 @@ if (isset($_POST['submit'])) {
         }
     }
 
-    
+
 
 }
 

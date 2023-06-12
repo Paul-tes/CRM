@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require("./connect.php");
 if (isset($_POST['submit'])) {
     $first_name = test_input($_POST['first-name']);
