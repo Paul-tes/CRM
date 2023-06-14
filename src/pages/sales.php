@@ -56,6 +56,16 @@
         <p>
       </div>
 
+      <section class="sales-home-section section-item">
+        <div class="swatch">
+          <div><p class="text-inside-animation-div">Lead</p></div>
+          <div><p class="text-inside-animation-div">Account</p></div>
+          <div><p class="text-inside-animation-div">Oportunity</p></div>
+          <div><p class="text-inside-animation-div">Deals</p></div>
+          <div><p class="text-inside-animation-div" style="font-size: 5rem;">Sales</p></div>
+        </div>
+      </section>
+
       <section class="lead-section display-none section-item">
         <div class="cust-lookup">
           <h2>Lead</h2>

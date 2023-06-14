@@ -28,8 +28,8 @@
   <div class="container">
     <aside class="left-nav">
       <div class="icons">
-        <a href="#"><i class="fa-solid fa-bars lef-nav-menue-bar-i"></i></a>
-        <a href="#"><i class="fa-solid fa-house lef-nav-menue-bar-i"></i></a>
+        <a href="#"><i class="fa-solid fa-bars lef-nav-menue-bar-i"><span class="icon-des display-none">Menue</span></i></a>
+        <a href="./index.php"><i class="fa-solid fa-house lef-nav-menue-bar-i"><span class="icon-des display-none">Home</span></i></a>
       </div>
     </aside>
     <div class="continer-main">
