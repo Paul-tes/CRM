@@ -22,7 +22,7 @@
     </nav>
     <nav class="header-nav-item-icon">
       <a href="#"><i class="fa-solid fa-bell header-bell-icon"></i></a>
-      <a href="#"><i class="fa-sharp fa-solid fa-circle-user header-user-icon"></i></a>
+      <a href="./login.php"><i class="fa-sharp fa-solid fa-circle-user header-user-icon"></i></a>
     </nav>
   </header>
   <div class="container">
