@@ -8,6 +8,7 @@ if (isset($_POST['search'])) {
     $connection = new connect;
     $connection = $connection->getConnection();
     $lead_result = mysqli_query($connection, $query);
+    echo $lead_result;
 }
 
 

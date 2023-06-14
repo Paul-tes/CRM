@@ -17,8 +17,6 @@
       <ul class="top-header-links-ul">
         <li><a href="./index.php" class="header-link-item-a current-page-a">Dashboard</a></li>
         <li><a href="./pages/sales.php" class="header-link-item-a">Sales</a></li>
-        <li><a href="#" class="header-link-item-a">Marketing</a></li>
-        <li><a href="#" class="header-link-item-a">Support</a></li>
         <li><a href="./pages/activities.php" class="header-link-item-a">Activities</a></li>
       </ul>
     </nav>
@@ -32,11 +30,6 @@
       <div class="icons">
         <a href="#"><i class="fa-solid fa-bars lef-nav-menue-bar-i"></i></a>
         <a href="#"><i class="fa-solid fa-house lef-nav-menue-bar-i"></i></a>
-        <a href="#"><i class="fa-solid fa-user lef-nav-menue-bar-i"></i></a>
-        <a href="#"><i class="fa-solid fa-share-nodes lef-nav-menue-bar-i"></i></a>
-        <a href="#"><i class="fa-solid fa-star lef-nav-menue-bar-i"></i></a>
-        <a href="#"><i class="fa-solid fa-shuffle lef-nav-menue-bar-i"></i></a>
-        <a href="#"><i class="fa-solid fa-magnifying-glass left-nav-search-i"></i></a>
       </div>
     </aside>
     <div class="continer-main">

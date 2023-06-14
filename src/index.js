@@ -1,5 +1,7 @@
 import MenueToggle from './modules/MenueToggle.js';
+import postCurrentDate from './modules/postCurrentDate.js';
 
+postCurrentDate();
 MenueToggle();
 
 const result = [

@@ -1,10 +1,15 @@
 import MenueToggle from "../modules/MenueToggle.js";
 import salesMenue from "../modules/SalesMenue.js";
 import Popups from "../modules/popUpwindow.js";
-// import popUps from '../modules/popUpwindow.js';
+import postCurrentDate from "../modules/postCurrentDate.js";
 
-MenueToggle();
-salesMenue();
+
+window.addEventListener('DOMContentLoaded', ()=>{
+  MenueToggle();
+  salesMenue();
+  postCurrentDate();
+})
+
 // popUps;
 document.querySelector(".continer-main").addEventListener("click", (event) => {
   const body = document.querySelector("body");

@@ -16,9 +16,7 @@
     <nav class="nav-item-w">
       <ul class="top-header-links-ul">
         <li><a href="../index.php" class="header-link-item-a">Dashboard</a></li>
-        <li><a href="#" class="header-link-item-a">Sales</a></li>
-        <li><a href="#" class="header-link-item-a">Marketing</a></li>
-        <li><a href="#" class="header-link-item-a">Support</a></li>
+        <li><a href="./sales.php" class="header-link-item-a">Sales</a></li> 
         <li><a href="#" class="header-link-item-a current-page-a">Activities</a></li>
       </ul>
     </nav>

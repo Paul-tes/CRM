@@ -9,17 +9,20 @@ const salesMenue = () => {
       document.querySelectorAll('.section-item').forEach((sec) => {
         sec.classList.add('display-none');
       });
-      document.querySelector('section.account-section').classList.remove('display-none');
+      const q = document.querySelector('section.account-section')
+      if(q) q.classList.remove('display-none');
     } else if (event.target.classList.contains('fa-address-card')) {
       document.querySelectorAll('.section-item').forEach((sec) => {
         sec.classList.add('display-none');
       });
-      document.querySelector('section.contact-section').classList.remove('display-none');
+      const q = document.querySelector('section.contact-section')
+      if(q) q.classList.remove('display-none');
     } else if (event.target.classList.contains('fa-star')) {
       document.querySelectorAll('.section-item').forEach((sec) => {
         sec.classList.add('display-none');
       });
-      document.querySelector('section.opportunity-section').classList.remove('display-none');
+      const q = document.querySelector('section.opportunity-section')
+      if(q) q.classList.remove('display-none');
     }
   });
 };

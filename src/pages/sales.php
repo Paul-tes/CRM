@@ -21,8 +21,6 @@
       <ul class="top-header-links-ul">
         <li><a href="../index.php" class="header-link-item-a">Dashboard</a></li>
         <li><a href="./sales.php" class="header-link-item-a current-page-a">Sales</a></li>
-        <li><a href="#" class="header-link-item-a">Marketing</a></li>
-        <li><a href="#" class="header-link-item-a">Support</a></li>
         <li><a href="./activities.php" class="header-link-item-a">Activities</a></li>
       </ul>
     </nav>
@@ -58,12 +56,6 @@
         <p>
       </div>
 
-      <?php
-      //lead section
-      require "../modules/php_modules/get_all_data.php";
-      require "../modules/php_modules/search_lead.php";
-
-      ?>
       <section class="lead-section display-none section-item">
         <div class="cust-lookup">
           <h2>Lead</h2>
@@ -91,23 +83,7 @@
               </tr>
             </thead>
             <tbody>
-              <?php
-              while ($row = mysqli_fetch_assoc($lead_result)) {
-                echo "<tr>";
-                echo "<td>" . $row['first_name'] . "</td>";
-                echo "<td>" . $row['last_name'] . "</td>";
-                echo "<td>" . $row['company'] . "</td>";
-                echo "<td>" . $row['job_title'] . "</td>";
-                echo "<td>" . $row['comment'] . "</td>";
-                echo "<td>" . $row['phone_number'] . "</td>";
-                echo "<td>" . $row['email'] . "</td>";
-                // echo "<td>" . $row['comment'] . "</td>";
-                echo "<td><button class='btn btn-update'>update</button></td>";
-                echo "<td><button class='btn btn-delete'>Delete</button></td>";
-                echo "</tr>";
-              }
-              ?>
-              <!-- <tr>
+              <tr>
                 <td>John</td>
                 <td>Doe</td>
                 <td>Acme Inc.</td>
@@ -130,7 +106,7 @@
                 <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
                 <th><button class="btn btn-update">update</button></th>
                 <th><button class="btn btn-delete">Delete</button></th>
-              </tr> -->
+              </tr>
               <!-- Add more rows as needed -->
             </tbody>
           </table>
@@ -317,7 +293,7 @@
       <button type="button" class="btn cancel">Close</button>
 
     </form>
-  </div> -->
+  </div> --> 
   <script src="./sales.js" type="module"></script>
 </body>
 

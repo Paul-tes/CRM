@@ -2,7 +2,9 @@ import Store from '../modules/Store.js';
 import Elements from '../modules/Elements.js';
 import Task from '../modules/Task.js';
 import MenueToggle from '../modules/MenueToggle.js';
+import postCurrentDate from '../modules/postCurrentDate.js';
 
+postCurrentDate();
 MenueToggle();
 
 class Ui {
