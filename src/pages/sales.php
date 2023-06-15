@@ -1,7 +1,3 @@
-<?php
-  require '../modules/php_modules/get_all_data.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,18 +92,23 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>Acme Inc.</td>
-                <td>Manager</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td>555-1234</td>
-                <td>john.doe@example.com</td>
-                <td><button class="btn btn-update">update</button></td>
-                <td><button class="btn btn-delete">Delete</button></td>
-              </tr>
-              <tr>
+            <?php
+              require_once ('../modules/php_modules/get_all_data.php');
+
+              while ($row = mysqli_fetch_assoc($lead_result)) {
+                echo "<td>" . $row['first_name'] . "</td>";
+                echo "<td>" . $row['last_name'] . "</td>";
+                echo "<td>" . $row['company'] . "</td>";
+                echo "<td>" . $row['job_title'] . "</td>";
+                echo "<td>" . $row['comment'] . "</td>";
+                echo "<td>" . $row['phone_number'] . "</td>";
+                echo "<td>" . $row['email'] . "</td>";
+                echo "<td><button class='btn btn-update'>update</button></td>";
+                echo "<td><button class='btn btn-delete'>Delete</button></td>";
+                echo "</tr>";
+              }
+              ?>
+              <!-- <tr>
                 <td>Jane</td>
                 <td>Smith</td>
                 <td>XYZ Corp.</td>
@@ -117,7 +118,7 @@
                 <td>jane.smith@example.com</td>
                 <th><button class="btn btn-update">update</button></th>
                 <th><button class="btn btn-delete">Delete</button></th>
-              </tr>
+              </tr> -->
               <!-- Add more rows as needed -->
             </tbody>
           </table>
