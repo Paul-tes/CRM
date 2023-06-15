@@ -83,7 +83,7 @@ export const populateOpportunities = () => {
       <td>${opp.details}</td>
       <td>${opp.stage}</td>
       <td>${opp.contact_role}</td>
-      <td>${opp.agent_id}</td>
+      <td>${opp.agent_first_name}</td>
       <td><button class="btn btn-update" id="${opp.id}">update</button></td>
       <td><button class="btn btn-delete" id="${opp.id}">Delete</button></td>
       `;
@@ -92,12 +92,3 @@ export const populateOpportunities = () => {
   })
   .catch(error => console.error(error));
 }
-
-// {
-//   "id": "1",
-//   "description": "New Website Design",
-//   "details": "Looking for a redesign of our company website",
-//   "stage": "Prospect",
-//   "contact_role": "Decision Maker",
-//   "agent_id": "3"
-// },

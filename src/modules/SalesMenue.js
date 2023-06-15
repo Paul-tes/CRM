@@ -1,4 +1,4 @@
-import { populateOpportunities, populateLead, populateAccount, populateContact } from "./populateLead.js";
+import { populateOpportunities, populateLead, populateAccount, populateContact } from "./populateData.js";
 
 const clearTable = () => {
   const leadDataElement = document.querySelector("#lead-data-populate-here");

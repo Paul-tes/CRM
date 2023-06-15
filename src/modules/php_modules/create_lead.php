@@ -14,12 +14,12 @@ if (isset($_POST['submit'])) {
     $connection = $connection->getConnection();
     $result = mysqli_query($connection, $query);
     if ($result == true) {
-        header("Location: ../../pages/sales.php?lead-created=1");
+        header("Location: ../../pages/success.html");
     } else {
-        header("Location: ../../pages/sales.php?error=1");
+        header("Location: ../../pages/error.html");
     }
 } else {
-    header("Location: ../../pages/sales.php?error=2");
+    header("Location: ../../pages/error.html");
 }
 
 function test_input($data)

@@ -180,24 +180,7 @@
               </tr>
             </thead>
             <tbody id="opportunity-data-populate-here">
-              <!-- <tr>
-                <td>Vnilla Opp</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td>closed</td>
-                <td>market share</td>
-                <td>Tesfaye</td>
-                <td><button class="btn btn-update">update</button></td>
-                <td><button class="btn btn-delete">Delete</button></td>
-              </tr>
-              <tr>
-                <td>Vnilla Opp</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td>closed</td>
-                <td>market share</td>
-                <td>Tesfaye</td>
-                <td><button class="btn btn-update">update</button></td>
-                <td><button class="btn btn-delete">Delete</button></td>
-              </tr> -->
+             
               <!-- Add more rows as needed -->
             </tbody>
           </table>
@@ -205,38 +188,6 @@
       </section>
     </div>
   </div>
-  <!-- pop up  -->
-  <!-- <div class="form-popup create-new-contact">
-    <form action="#" method="post" class="form-container">
-      <h2>Create New Opportunity</h2>
-      
-      <label for="address"><b>Desc</b></label>
-      <input type="text" placeholder="Place Desc" name="desc" required>
-
-      <label for="details"><b>Details</b></label>
-      <textarea name="details" id="comment" cols="30" rows="10" placeholder="Detail info"></textarea>
-      
-      <label for="address"><b>Stage</b></label>
-      <select id="status" name="status">
-        <option value="0">0</option>
-        <option value="10">10</option>
-        <option value="5">5</option>
-      </select>
-
-      <label for="contact-role"><b>Contact Role</b></label>
-      <input type="text" placeholder="Contact Role" name="contact-role" required>
-
-      <label for="full-name"><b>Agenet</b></label>
-      <div class="full-name">
-        <input type="text" placeholder="Agent First Name" name="agent-first-name" required>
-        <input type="text" placeholder="Agent Last Name" name="agent-last-name" required>
-      </div>
-
-      <button type="submit" class="btn">Create New</button>
-      <button type="button" class="btn cancel">Close</button>
-
-    </form>
-  </div> --> 
   <script src="./sales.js" type="module"></script>
 </body>
 
