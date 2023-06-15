@@ -91,35 +91,7 @@
                 <th></th>
               </tr>
             </thead>
-            <tbody>
-            <?php
-              require_once ('../modules/php_modules/get_all_data.php');
-
-              while ($row = mysqli_fetch_assoc($lead_result)) {
-                echo "<td>" . $row['first_name'] . "</td>";
-                echo "<td>" . $row['last_name'] . "</td>";
-                echo "<td>" . $row['company'] . "</td>";
-                echo "<td>" . $row['job_title'] . "</td>";
-                echo "<td>" . $row['comment'] . "</td>";
-                echo "<td>" . $row['phone_number'] . "</td>";
-                echo "<td>" . $row['email'] . "</td>";
-                echo "<td><button class='btn btn-update'>update</button></td>";
-                echo "<td><button class='btn btn-delete'>Delete</button></td>";
-                echo "</tr>";
-              }
-              ?>
-              <!-- <tr>
-                <td>Jane</td>
-                <td>Smith</td>
-                <td>XYZ Corp.</td>
-                <td>Developer</td>
-                <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
-                <td>555-5678</td>
-                <td>jane.smith@example.com</td>
-                <th><button class="btn btn-update">update</button></th>
-                <th><button class="btn btn-delete">Delete</button></th>
-              </tr> -->
-              <!-- Add more rows as needed -->
+            <tbody id="lead-data-populate-here">
             </tbody>
           </table>
         </div>
@@ -146,23 +118,7 @@
                 <th></th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>Addis Ababa</td>
-                <td>Opend</td>
-                <td><button class="btn btn-update">update</button></td>
-                <td><button class="btn btn-delete">Delete</button></td>
-              </tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>Addis Ababa</td>
-              <td>Opend</td>
-              <td><button class="btn btn-update">update</button></td>
-              <td><button class="btn btn-delete">Delete</button></td>
-              </tr>
-              <!-- Add more rows as needed -->
+            <tbody id="account-data-populate-here">
             </tbody>
           </table>
         </div>
@@ -192,8 +148,8 @@
                 <th></th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody id="contact-data-populate-here">
+              <!-- <tr>
                 <td>John</td>
                 <td>Doe</td>
                 <td>+251-9-555-1234</td>
@@ -212,7 +168,7 @@
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                 <td><button class="btn btn-update">update</button></td>
                 <td><button class="btn btn-delete">Delete</button></td>
-              </tr>
+              </tr> -->
               <!-- Add more rows as needed -->
             </tbody>
           </table>
@@ -242,8 +198,8 @@
                 <th></th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
+            <tbody id="opportunity-data-populate-here">
+              <!-- <tr>
                 <td>Vnilla Opp</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                 <td>closed</td>
@@ -260,7 +216,7 @@
                 <td>Tesfaye</td>
                 <td><button class="btn btn-update">update</button></td>
                 <td><button class="btn btn-delete">Delete</button></td>
-              </tr>
+              </tr> -->
               <!-- Add more rows as needed -->
             </tbody>
           </table>
