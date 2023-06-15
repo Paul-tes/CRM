@@ -119,6 +119,7 @@
               </tr>
             </thead>
             <tbody id="account-data-populate-here">
+              <!-- account data here -->
             </tbody>
           </table>
         </div>
@@ -149,27 +150,7 @@
               </tr>
             </thead>
             <tbody id="contact-data-populate-here">
-              <!-- <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>+251-9-555-1234</td>
-                <td>john.doe@example.com</td>
-                <td>Acme Inc, Addis Ababa</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td><button class="btn btn-update">update</button></td>
-                <td><button class="btn btn-delete">Delete</button></td>
-              </tr>
-              <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>+251-9-555-1234</td>
-                <td>john.doe@example.com</td>
-                <td>Acme Inc, Addis Ababa</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td><button class="btn btn-update">update</button></td>
-                <td><button class="btn btn-delete">Delete</button></td>
-              </tr> -->
-              <!-- Add more rows as needed -->
+              <!-- contact data here -->
             </tbody>
           </table>
         </div>

@@ -3,7 +3,7 @@
 // Define database connection constants
 require_once("../modules/php_modules/connect.php");
 
-$query = "CALL get_all_account();";
+$query = "CALL get_all_Opportunity();";
 $connection = new connect;
 $connection = $connection->getConnection();
 
