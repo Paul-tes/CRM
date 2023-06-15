@@ -16,11 +16,11 @@ if (isset($_POST['submit'])) {
             $_SESSION['mode'] = "admin";
             header("Location: ../../index.php");
         } else {
-            if ($email != "") {
-                header("Location: ../template/login.php?error=1&email=$email");
-            } else {
-                header("Location: ../template/login.php?error=1");
-            }
+            // if ($email != "") {
+            //     header("Location: ../template/login.php?error=1&email=$email");
+            // } else {         
+            //     header("Location: ../template/login.php?error=1");
+            // }
         }
     } else {
         $email = test_input($_POST['email']);
@@ -54,45 +54,4 @@ function test_input($data)
     return $data;
 }
 
-/*
-
-Create New Lead
-First Name [                ]
-Last Name [                ]
-Company [             ] 
-Job title [              ]
-Comment [                 ]
-Phone Number [             ]
-Email [             ]
-Comment [                   ]
-
-Create new Contact
-First Name [                ]
-Last Name [                ]
-Phone Number [             ]
-Email [             ]
-Address [                  ]
-Details [                ]
-CaseID [  ]
-
-Create New Account
- Agent FirstName[                ]
- Agent LastName [                ]
- Address [  ]
-Account ContactRole [    ]
-Status [     ]
-
-
-
-
-
-
-Create new Opportunity
-Desc  [  ]
-Details [  ]
-Stage [   ]
-Contact role [  ]
-OpportunityID [    ]
-Agent [    ]
-*/
 ?>

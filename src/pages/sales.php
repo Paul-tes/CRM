@@ -1,3 +1,7 @@
+<?php
+  require '../modules/php_modules/get_all_data.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +37,7 @@
     <aside class="left-nav">
       <div class="icons">
         <a href="#"><i class="fa-solid fa-bars lef-nav-menue-bar-i"><span
-              class="icon-des display-none">Menue</span></i></a>
+              class="icon-des display-none">Menu</span></i></a>
         <a href="./sales.php"><i class="fa-solid fa-house lef-nav-menue-bar-i"><span
               class="icon-des display-none">Home</span></i></a>
         <a href="#"><i class="fa-solid fa-shuffle lef-nav-menue-bar-i"><span
@@ -87,7 +91,6 @@
                 <th>Comment</th>
                 <th>Phone Number</th>
                 <th>Email</th>
-                <!-- <th>Comment</th> -->
                 <th></th>
                 <th></th>
               </tr>
@@ -101,7 +104,6 @@
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                 <td>555-1234</td>
                 <td>john.doe@example.com</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                 <td><button class="btn btn-update">update</button></td>
                 <td><button class="btn btn-delete">Delete</button></td>
               </tr>
@@ -113,7 +115,6 @@
                 <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
                 <td>555-5678</td>
                 <td>jane.smith@example.com</td>
-                <td>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</td>
                 <th><button class="btn btn-update">update</button></th>
                 <th><button class="btn btn-delete">Delete</button></th>
               </tr>
@@ -136,7 +137,7 @@
           <table class="customer-grid-table">
             <thead>
               <tr>
-                <th> Agent First Name</th>
+                <th>Agent First Name</th>
                 <th>Agent Last Name</th>
                 <th>Address</th>
                 <th>Status</th>
@@ -186,7 +187,6 @@
                 <th>Email</th>
                 <th>Address</th>
                 <th>Details</th>
-                <th>CaseID</th>
                 <th></th>
                 <th></th>
               </tr>
@@ -199,7 +199,6 @@
                 <td>john.doe@example.com</td>
                 <td>Acme Inc, Addis Ababa</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td>AQ5534</td>
                 <td><button class="btn btn-update">update</button></td>
                 <td><button class="btn btn-delete">Delete</button></td>
               </tr>
@@ -210,7 +209,6 @@
                 <td>john.doe@example.com</td>
                 <td>Acme Inc, Addis Ababa</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td>AQ5534</td>
                 <td><button class="btn btn-update">update</button></td>
                 <td><button class="btn btn-delete">Delete</button></td>
               </tr>
@@ -238,7 +236,6 @@
                 <th>Details</th>
                 <th>Stage</th>
                 <th>Contact role</th>
-                <th>OpportunityID</th>
                 <th>Agent</th>
                 <th></th>
                 <th></th>
@@ -250,7 +247,6 @@
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                 <td>closed</td>
                 <td>market share</td>
-                <td>OP1221</td>
                 <td>Tesfaye</td>
                 <td><button class="btn btn-update">update</button></td>
                 <td><button class="btn btn-delete">Delete</button></td>
@@ -260,7 +256,6 @@
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
                 <td>closed</td>
                 <td>market share</td>
-                <td>OP1221</td>
                 <td>Tesfaye</td>
                 <td><button class="btn btn-update">update</button></td>
                 <td><button class="btn btn-delete">Delete</button></td>

@@ -9,6 +9,7 @@ $connection = $connection->getConnection();
 $lead_result = $connection->query($query);
 if(!$lead_result) die("ERROR: ".mysqli_error($connection));
 echo "1".json_encode($lead_result);
+
 // $query = "CALL get_all_account();";
 // $connection = new connect;
 // $connection = $connection->getConnection();
