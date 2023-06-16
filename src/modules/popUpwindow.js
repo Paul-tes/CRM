@@ -93,7 +93,7 @@ class Popups {
     <option value="Qualified">Qualified</option>
     <option value="Interest">Interest</option>
     <option value="Consideration">Consideration</option>
-    <option value="Interest">open</option>
+    <option value="open">open</option>
     <option value="active">active</option>
     <option value="done">done</option>
   </select>

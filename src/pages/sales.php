@@ -181,7 +181,6 @@
             </thead>
             <tbody id="opportunity-data-populate-here">
              
-              <!-- Add more rows as needed -->
             </tbody>
           </table>
         </div>
