@@ -1,5 +1,6 @@
 import MenueToggle from "../modules/MenueToggle.js";
 import salesMenue from "../modules/SalesMenue.js";
+import deleteRecord from "../modules/deleteRecorde.js";
 import Popups from "../modules/popUpwindow.js";
 import postCurrentDate from "../modules/postCurrentDate.js";
 
@@ -53,5 +54,25 @@ document.querySelector(".continer-main").addEventListener("click", (event) => {
     document.querySelector(".cancel").addEventListener("click", () => {
       body.removeChild(div);
     });
+  }
+
+
+  // delete records
+  else if (event.target.classList.contains("btn-delete")) {
+    const id = event.target.id;
+    const table = event.target.parentElement.nextElementSibling.id;
+    fetch(`localhost/CRM/src/API/dellet_record.php`, {
+    method: 'GET',
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Display a success message
+    // console.log(data.message);
+  })
+  .catch(error => {
+    // Display an error message
+    // console.error(JSON.parse(error));
+  });
+
   }
 });

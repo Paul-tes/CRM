@@ -20,8 +20,8 @@ const salesMenue = () => {
       clearTable();
 
       document.querySelector('section.lead-section').classList.remove('display-none');
-      console.log('tobe populated');
       populateLead();
+      addEvent();
     } else if (event.target.classList.contains('fa-user')) {
       document.querySelectorAll('.section-item').forEach((sec) => {
         sec.classList.add('display-none');
@@ -40,6 +40,7 @@ const salesMenue = () => {
       const q = document.querySelector('section.contact-section')
       if(q) q.classList.remove('display-none');
       populateContact();
+      addEvent();
     } else if (event.target.classList.contains('fa-star')) {
       document.querySelectorAll('.section-item').forEach((sec) => {
         sec.classList.add('display-none');
@@ -49,6 +50,7 @@ const salesMenue = () => {
       const q = document.querySelector('section.opportunity-section')
       if(q) q.classList.remove('display-none');
       populateOpportunities();
+      addEvent();
     }
   });
 };

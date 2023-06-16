@@ -15,8 +15,8 @@ export const populateLead = () => {
         <td>${lead.comment}</td>
         <td>${lead.phone_number}</td>
         <td>${lead.email}</td>
-        <th><button class="btn btn-update" id="${lead.id}">update</button></th>
         <th><button class="btn btn-delete" id="${lead.id}">Delete</button></th>
+        <div id="lead"></div>
       `;
       leadDataElement.appendChild(row);
     });
@@ -37,8 +37,8 @@ export const populateAccount = () => {
       <td>${account.last_name}</td>
       <td>${account.address}</td>
       <td>${account.status}</td>
-      <td><button class="btn btn-update" id="${account.id}">update</button></td>
       <td><button class="btn btn-delete" id="${account.id}">Delete</button></td>
+      <div id="account"></div>
       `;
       accountDataElement.appendChild(row);
     });
@@ -61,8 +61,8 @@ export const populateContact = () => {
       <td>${contact.email}</td>
       <td>${contact.address}</td>
       <td>${contact.details}</td>
-      <td><button class="btn btn-update" id="${account.id}">update</button></td>
       <td><button class="btn btn-delete" id="${account.id}">Delete</button></td>
+      <div id="contacts"></div>
       `;
       contactDataElement.appendChild(row);
     });
@@ -84,8 +84,8 @@ export const populateOpportunities = () => {
       <td>${opp.stage}</td>
       <td>${opp.contact_role}</td>
       <td>${opp.agent_first_name}</td>
-      <td><button class="btn btn-update" id="${opp.id}">update</button></td>
       <td><button class="btn btn-delete" id="${opp.id}">Delete</button></td>
+      <div id="opportunity"></div>
       `;
       oppDataElement.appendChild(row);
     });

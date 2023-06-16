@@ -1,3 +1,5 @@
+// import './php_modules/create_lead.php'
+
 class Popups {
   createLead = `
   <form action="../modules/php_modules/create_lead.php" method="post" class="form-container">
@@ -23,7 +25,8 @@ class Popups {
   </form>
   `;
 
-  contact = `<form action="#" method="post" class="form-container">
+  contact = `
+  <form action="../modules/php_modules/create_contact.php" method="post" class="form-container">
     <h2>Create New Contact</h2>
     
     <label for="full-name"><b>Full Name</b></label>
@@ -50,8 +53,8 @@ class Popups {
   </form>`;
 
   account = `
-    <form action="#" method="post" class="form-container">
-      <h2>Create New Account</h2>
+    <form action="../modules/php_modules/create_account.php" method="post" class="form-container">
+      <h2>Create New Account</hs  2>
       
       <label for="full-name"><b>Agent Full Name</b></label>
       <div class="full-name">
@@ -66,7 +69,7 @@ class Popups {
       <label for="status"><b>Status</b></label>
       <select id="status" name="status">
         <option value="active">Active</option>
-        <option value="closed">Closed</option>
+        <option value="inactive">inactive</option>
         <option value="none">None</option>
       </select>
   
@@ -76,7 +79,7 @@ class Popups {
   `;
 
   opportunity = `
-<form action="#" method="post" class="form-container">
+<form action="../modules/php_modules/create_opp.php" method="post" class="form-container">
   <h2>Create New Opportunity</h2>
   
   <label for="address"><b>Desc</b></label>

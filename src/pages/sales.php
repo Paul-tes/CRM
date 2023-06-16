@@ -92,7 +92,7 @@
               </tr>
             </thead>
             <tbody id="lead-data-populate-here">
-            </tbody>
+            </tbody>  
           </table>
         </div>
       </section>
@@ -100,7 +100,7 @@
 
       <section class="account-section display-none section-item">
         <div class="cust-lookup">
-          <h2>Account Lookup</h2>
+          <h2>Account</h2>
           <div class="locokup-input-items">
             <input type="text" name="name" id="name" placeholder="Name">
             <button class="cust-look-btn"><i class="fa-solid fa-magnifying-glass left-nav-search-i"></i></button>

@@ -9,10 +9,12 @@ if (isset($_POST['submit'])) {
     $phone = test_input($_POST['phone']);
     $email = test_input($_POST['email']);
     $comment = test_input($_POST['comment']);
+
     $query = "CALL create_lead('$first_name','$last_name','$company','$job_title','$phone','$email','$comment');";
     $connection = new connect;
     $connection = $connection->getConnection();
     $result = mysqli_query($connection, $query);
+    
     if ($result == true) {
         header("Location: ../../pages/success.html");
     } else {
