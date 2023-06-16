@@ -96,7 +96,7 @@
           </div>
         </div>
       </section>
-      <div class="cust-lookup">
+      <!-- <div class="cust-lookup">
         <h2>Customer Lookup</h2>
         <div class="locokup-input-items">
           <input type="text" name="name" id="name" placeholder="Name">
@@ -104,12 +104,12 @@
           <input type="text" name="country" id="country" placeholder="Country">
           <button class="cust-look-btn"><i class="fa-solid fa-magnifying-glass left-nav-search-i"></i></button>
         </div>
-      </div>
-      <div class="cust-lookup-result">
+      </div> -->
+      <!-- <div class="cust-lookup-result">
         <h4>Result</h4>
         <div class="result-lists">
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <script src="./index.js" type="module"></script>

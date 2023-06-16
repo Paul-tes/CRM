@@ -61,7 +61,7 @@ export const populateContact = () => {
       <td>${contact.email}</td>
       <td>${contact.address}</td>
       <td>${contact.details}</td>
-      <td><button class="btn btn-delete" id="${account.id}">Delete</button></td>
+      <td><button class="btn btn-delete" id="${contact.id}">Delete</button></td>
       <div id="contacts"></div>
       `;
       contactDataElement.appendChild(row);

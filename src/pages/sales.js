@@ -52,7 +52,7 @@ document.querySelector(".continer-main").addEventListener("click", (event) => {
     body.appendChild(div);
 
     document.querySelector(".cancel").addEventListener("click", () => {
-      body.removeChild(div);
+      body.removeChild(div);  
     });
   }
 
@@ -61,18 +61,8 @@ document.querySelector(".continer-main").addEventListener("click", (event) => {
   else if (event.target.classList.contains("btn-delete")) {
     const id = event.target.id;
     const table = event.target.parentElement.nextElementSibling.id;
-    fetch(`localhost/CRM/src/API/dellet_record.php`, {
-    method: 'GET',
-  })
-  .then(response => response.json())
-  .then(data => {
-    // Display a success message
-    // console.log(data.message);
-  })
-  .catch(error => {
-    // Display an error message
-    // console.error(JSON.parse(error));
-  });
-
+    console.log(id, table);
+    deleteRecord(id, table);
+    event.target.parentElement.parentElement.innerHTML = '';
   }
 });

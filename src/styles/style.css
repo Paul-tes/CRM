@@ -117,7 +117,7 @@ a {
 }
 
 span.icon-des {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-left: 1rem;
   letter-spacing: 2px;
   text-transform: lowercase;
@@ -144,8 +144,7 @@ section.cards-section {
 .card {
   width: 20rem;
   height: 19.2rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
   box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
   padding: 1rem;
 }

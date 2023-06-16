@@ -1,9 +1,12 @@
 import MenueToggle from './modules/MenueToggle.js';
 import postCurrentDate from './modules/postCurrentDate.js';
+import postTodo from './modules/postTodo.js';
+import postOpenDeal from './modules/postOppenDeal.js';
 
 postCurrentDate();
 MenueToggle();
-
+postTodo();
+postOpenDeal();
 const result = [
   {
     name: 'paul',

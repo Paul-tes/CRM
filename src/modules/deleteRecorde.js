@@ -1,5 +1,6 @@
 const deleteRecord = (id, table) => {
-  fetch(`localhost/CRM/src/API/dellet_record.php?table=lead&id=6`, {
+  const url = `http://localhost/crm/src/API/dellet_record.php?table=${table}&id=${id}`;
+  fetch(url, {
     method: 'GET',
   })
   .then(response => response.json())

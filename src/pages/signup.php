@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="login-form-div">
-      <form action="#" class="login-form">
+      <form action="../modules/php_modules/signup.php" class="login-form" method="post">
         <h2 class="create-acc-h2">Create Account</h2>
         <button class="google-sign-btn">sign up with Google</button>
         <p>- OR -</p>

@@ -16,11 +16,11 @@ if (isset($_POST['submit'])) {
             $_SESSION['mode'] = "admin";
             header("Location: ../../index.php");
         } else {
-            // if ($email != "") {
-            //     header("Location: ../template/login.php?error=1&email=$email");
-            // } else {         
-            //     header("Location: ../template/login.php?error=1");
-            // }
+            if ($email != "") {
+                header("Location: ../../pages/error.html");
+            } else {         
+                header("Location: ../../pages/error.html");
+            }
         }
     } else {
         $email = test_input($_POST['email']);
@@ -34,11 +34,11 @@ if (isset($_POST['submit'])) {
             $_SESSION['mode'] = "agent";
             header("Location: ../../index.php");
         } else {
-            // if ($email != "") {
-            //     header("Location: ../template/login.php?error=1&email=$email");
-            // } else {
-            //     header("Location: ../template/login.php?error=1");
-            // }
+            if ($email != "") {
+                header("Location: ../../pages/error.html");
+            } else {
+                header("Location: ../../pages/error.html"); 
+            }
         }
     }
 

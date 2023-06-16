@@ -90,9 +90,12 @@ class Popups {
   
   <label for="address"><b>Stage</b></label>
   <select id="status" name="status">
-    <option value="0">0</option>
-    <option value="10">10</option>
-    <option value="5">5</option>
+    <option value="Qualified">Qualified</option>
+    <option value="Interest">Interest</option>
+    <option value="Consideration">Consideration</option>
+    <option value="Interest">open</option>
+    <option value="active">active</option>
+    <option value="done">done</option>
   </select>
 
   <label for="contact-role"><b>Contact Role</b></label>
