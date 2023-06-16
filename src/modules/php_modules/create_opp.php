@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $desc = mysqli_real_escape_string($connection, $desc);
     $details = mysqli_real_escape_string($connection, $details);
-    $status = mysqli_real_escape_string($connection, $status);
     $contact_role = mysqli_real_escape_string($connection, $contact_role);
     $agent_first_name = mysqli_real_escape_string($connection, $agent_first_name);
     $agent_last_name = mysqli_real_escape_string($connection, $agent_last_name);

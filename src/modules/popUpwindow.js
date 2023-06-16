@@ -69,7 +69,7 @@ class Popups {
       <label for="status"><b>Status</b></label>
       <select id="status" name="status">
         <option value="active">Active</option>
-        <option value="inactive">inactive</option>
+        <option value="inactive">Inactive</option>
         <option value="none">None</option>
       </select>
   

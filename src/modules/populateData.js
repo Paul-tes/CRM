@@ -83,7 +83,7 @@ export const populateOpportunities = () => {
       <td>${opp.details}</td>
       <td>${opp.stage}</td>
       <td>${opp.contact_role}</td>
-      <td>${opp.agent_first_name}</td>
+      <td>${opp.agent_id}</td>
       <td><button class="btn btn-delete" id="${opp.id}">Delete</button></td>
       <div id="opportunity"></div>
       `;
